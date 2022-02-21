@@ -1,2 +1,2 @@
 # IS332-Project
-Neal Patel's Project
+Neal's Project
