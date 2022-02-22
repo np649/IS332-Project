@@ -44,6 +44,11 @@ function generateCard(name, image, price, category){
     card.className = "card h-50";
     column.appendChild(card);
 
+    let cardProductName = document.createElement('h5');
+    cardProductName.className = "card-text";
+    cardProductName.innerHTML = name;
+    cardBody.appendChild(cardProductName);
+    
     let cardImage = document.createElement('img');
     cardImage.src = image;
     card.appendChild(cardImage);
@@ -61,11 +66,6 @@ function generateCard(name, image, price, category){
     cardProductCategory.className = "card-text";
     cardProductCategory.innerHTML = category;
     cardBody.appendChild(cardProductCategory);
-
-    let cardProductName = document.createElement('h5');
-    cardProductName.className = "card-text";
-    cardProductName.innerHTML = name;
-    cardBody.appendChild(cardProductName);
 
     return column;
 }
