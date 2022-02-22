@@ -1,0 +1,77 @@
+.carousel {
+    height: 450px;
+    width: 800px;
+    align-self: center;
+    margin: 100px 25%;
+}
+
+.carousel-item,
+.carousel-inner,
+.carousel-inner img {
+    height: 100%;
+    width: auto;
+    align-content: center;
+}
+
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: aliceblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 10px;
+    font-size: 0.75rem;
+}
+
+
+section h2 {
+    padding-top: 2em;
+    padding-bottom: 0.25em;
+    margin: 0;
+    font-size: 150%;
+    text-align: center;
+    width: 98%;
+}
+
+section p {
+    padding-top: .5em;
+    padding-bottom: .25em;
+    padding-left: 20%;
+    padding-right: 25%;
+    font-size: 130%;
+    text-align: center;
+    width: 100%;
+
+}
+
+aside {
+    width: 25%;
+    float: left;
+    padding-top: 2em;
+    padding-right: 3em;
+    padding-left: 3em;
+
+}
+aside h2 {
+    padding-top: .5em;
+    padding-bottom: .25em;
+    font-size: 150%;
+    color: #800000;
+    text-align: center;
+
+}
+aside p {
+    padding-right: 3em;
+    padding-left: 3em;
+    text-align: center;
+
+}
+
+.dev {
+    display: block;
+    margin-left: 25%;
+    width: 50%;
+}
