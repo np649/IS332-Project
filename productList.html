@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product List</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-md justify-content-start bg-dark navbar-dark col-12">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">Home</a>
+            <!-- Responsive Button for the smaller menu -->
+            <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <!-- Links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="productList.html">Product List</a>
+                    </li>
+                        </div>
+                </ul>
+            </div>
+        </nav>
+
+
+    <div class="container-fluid"></div>
+        <div class="col-12 col-md-2">
+            <div class="card shadow-5" id="filters">
+                <div class="card-body">
+                    <form action="">
+
+                        <div class="form-outline mb-4">
+                            <label for="sort">Order by</label>
+                            <select class="form-select" id="sort" name="sortBy">
+                                <option value="a-z">Alphabetically</option>
+                                <option value="price-low-high">$ to $$$</option>
+                                <option value="price-high-low">$$$ to $</option>
+                            </select>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                            <label for="category">Category</label>
+                            <select class="form-select" id="category" name="categoryList">
+                            </select>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                            <label for="price">Price Range</label>
+                            <select class="form-select" id="price" name="priceRange">
+                                <option value="-1">All</option>
+                                <option value="0">$0 - $50</option>
+                                <option value="1">$51 - $100</option>
+                                <option value="2">$101+</option>
+                            </select>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    <div class="col-12 col-md-9" id="productList">
+
+    </div>
+
+</div>
+
+
+        <script type="text/javascript" src="js/product-list.js"></script>
+
+</body>
+</html>
